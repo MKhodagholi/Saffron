@@ -215,6 +215,47 @@ ul.services-content {
     END SERVICES AREA STYLE
 ----------------------------------------------- */
 
+
+/* -----------------------------------------------
+    START CONTACT AREA STYLE
+----------------------------------------------- */
+
+#contact {
+    background-color: #fff;
+}
+ul.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.contact-content li {
+    padding: 0 30px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.contact-content li i {
+    font-size: 50px;
+    color: red;
+    margin: 10px 0;
+}
+
+.contact-content li p {
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-content li{
+        flex-basis: 100%;
+    }
+}
+/* -----------------------------------------------
+    END CONTACT AREA STYLE
+----------------------------------------------- */
+
 @media screen and (max-width: 1120px) {
     header {
         padding: 20px 50px;
