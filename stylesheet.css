@@ -256,6 +256,27 @@ ul.contact-content {
     END CONTACT AREA STYLE
 ----------------------------------------------- */
 
+/* -----------------------------------------------
+    START FOOTER AREA STYLE
+----------------------------------------------- */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Lobster";
+    flex-direction: column;
+    height: 80px;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+/* -----------------------------------------------
+    START FOOTER AREA STYLE
+----------------------------------------------- */
+
+
 @media screen and (max-width: 1120px) {
     header {
         padding: 20px 50px;
