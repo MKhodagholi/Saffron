@@ -173,6 +173,47 @@ ul.about-content {
 ----------------------------------------------- */
 
 
+/* -----------------------------------------------
+    START SERVICES AREA STYLE
+----------------------------------------------- */
+
+#services {
+    background-color: #ddd;
+}
+
+ul.services-content {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.services-content li {
+    padding: 0 30px;
+    flex-basis: 32%;
+    text-align: center;
+}
+
+.services-content li i {
+    font-size: 60px;
+    color: red;
+    margin-bottom: 25px;
+}
+
+.services-content li h4 {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 800px) {
+    .services-content li {
+        flex-basis: 100%;
+    }
+}
+
+/* -----------------------------------------------
+    END SERVICES AREA STYLE
+----------------------------------------------- */
 
 @media screen and (max-width: 1120px) {
     header {
