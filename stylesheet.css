@@ -1,54 +1,3 @@
-/* header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    flex-grow: 1;
-}
-
-.logo a {
-    text-decoration: none;
-    color: dodgerblue;
-    padding: 2em;
-    font-family: "Lobster";
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-}
-
-.image img{
-    width: 100%;
-    position: relative;
-    width: 1440px;
-}
-
-.logo {
-    position: absolute;
-    left: 1%;
-    flex-basis: 10%;
-    background: linear-gradient(180deg, #00000000 0%, #000000ab 60%);
-
-}
-
-nav {
-    position: absolute;
-    color: purple;
-    right: 280px;
-}
-
-.nav nav ul {
-    display: flex;
-    padding: 20px;
-    list-style-type: none;
-    background: linear-gradient(180deg, #00000000 0%, #000000ab 60%);
-}
-
-.nav nav ul a {
-    text-decoration: none;
-    padding: 0 20px;
-    color: dodgerblue;
-    font-family: "Lobster";
-} */
-
-
 * {
     margin: 0;
     padding: 0;
@@ -108,6 +57,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 110px 100px;
 }
 
@@ -158,6 +108,70 @@ section {
 /* -----------------------------------------------
     END BANNER AREA STYLE
 ----------------------------------------------- */
+
+/* -----------------------------------------------
+    START ABOUT AREA STYLE
+----------------------------------------------- */
+ul.about-content {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-content li {
+    height: 290px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-content {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .12);
+    border-radius: 20px;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+
+.about-content li h2, p {
+    padding: 20px;
+}
+
+.about-left {
+    flex-basis: 40%;
+    background-image: url(./images/image2.jpeg);
+}
+
+.about-right {
+    flex-basis: 60%;
+    background-color: #ededed;
+    position: relative;
+}
+
+.about-btn {
+    text-decoration: none;
+    color: red;
+    background-color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    align-self: flex-start;
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .about-left,.about-right {
+        flex-basis: 100%;
+    }
+}
+
+/* -----------------------------------------------
+    END ABOUT AREA STYLE
+----------------------------------------------- */
+
 
 
 @media screen and (max-width: 1120px) {
